@@ -1,7 +1,7 @@
 # Project Description
 ## Human Activity Recognition Using Smartphones Dataset
 
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed 6 activities(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
 
@@ -36,7 +36,78 @@ PLEASE ignore the data in the directory, Inertial Signals in the test and train 
 10. Merge the test and training data frames to create a merged dat frame.
 11. Get the variables(column names) that match mean and standard deviation measurements from step 10 and create the final data frame with Activity, Subject and mean and standard deviation measurements.
 12. Use the melt{reshape2} function to create a data frame for each measurement grouped by Activity and Subject.
-13. Use dcast{reshape2} to get the mean of each measurement grouped by Activity and Subject. This is the tidy data.
-14. Use write.table to wirte a file,TidyData_Russel_DSouza.txt to the working directory.
+13. Use dcast{reshape2} to get the average of each measurement grouped by Activity and Subject. This is the tidy data.
+14. Use write.table to wirte a file,TidyData.txt to the working directory.
 
-### Description of the variables in the tiny_data.txt file
+### Description of the variables in the TidyData.txt file
+Dimensions of TidyData.txt: 180 observations(rows)
+                            68 variables(columns)
+                            
+There are 6 activities(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) and 30 subjects which results in 180 (6 * 30) observations for the mean and standard deviation measurements(variables 3-68). Variable 1 and 2 are Activity and Subject respectively.
+The variables for the mean and standard deviation measurements are as follows:
+tBodyAcc-mean()-X -           
+tBodyAcc-mean()-Y - 
+tBodyAcc-mean()-Z
+tGravityAcc-mean()-X
+tGravityAcc-mean()-Y
+tGravityAcc-mean()-Z
+tBodyAccJerk-mean()-X
+tBodyAccJerk-mean()-Y
+tBodyAccJerk-mean()-Z
+tBodyGyro-mean()-X
+tBodyGyro-mean()-Y
+tBodyGyro-mean()-Z
+tBodyGyroJerk-mean()-X
+tBodyGyroJerk-mean()-Y
+tBodyGyroJerk-mean()-Z
+tBodyAccMag-mean()
+tGravityAccMag-mean()
+tBodyAccJerkMag-mean()
+tBodyGyroMag-mean()
+tBodyGyroJerkMag-mean()
+fBodyAcc-mean()-X
+fBodyAcc-mean()-Y
+fBodyAcc-mean()-Z
+fBodyAccJerk-mean()-X
+fBodyAccJerk-mean()-Y
+fBodyAccJerk-mean()-Z
+fBodyGyro-mean()-X
+fBodyGyro-mean()-Y
+fBodyGyro-mean()-Z
+fBodyAccMag-mean()
+fBodyBodyAccJerkMag-mean()
+fBodyBodyGyroMag-mean()
+fBodyBodyGyroJerkMag-mean()
+tBodyAcc-std()-X
+tBodyAcc-std()-Y
+tBodyAcc-std()-Z
+tGravityAcc-std()-X
+tGravityAcc-std()-Y
+tGravityAcc-std()-Z
+tBodyAccJerk-std()-X
+tBodyAccJerk-std()-Y
+tBodyAccJerk-std()-Z
+tBodyGyro-std()-X
+tBodyGyro-std()-Y
+tBodyGyro-std()-Z
+tBodyGyroJerk-std()-X
+tBodyGyroJerk-std()-Y
+tBodyGyroJerk-std()-Z
+tBodyAccMag-std()
+tGravityAccMag-std()
+tBodyAccJerkMag-std()
+tBodyGyroMag-std()
+tBodyGyroJerkMag-std()
+fBodyAcc-std()-X
+fBodyAcc-std()-Y
+fBodyAcc-std()-Z
+fBodyAccJerk-std()-X
+fBodyAccJerk-std()-Y
+fBodyAccJerk-std()-Z
+fBodyGyro-std()-X
+fBodyGyro-std()-Y
+fBodyGyro-std()-Z
+fBodyAccMag-std()
+fBodyBodyAccJerkMag-std()
+fBodyBodyGyroMag-std()
+fBodyBodyGyroJerkMag-std()
