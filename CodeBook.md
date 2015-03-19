@@ -5,7 +5,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
 
-## Collection of the raw data
+### Collection of the raw data
 Data is provided in a zip file contains the following files:
 * 'features_info.txt': Shows information about the variables used on the feature vector.
 * 'features.txt': List of all features.
@@ -22,8 +22,8 @@ The following files are available for the train and test data. Their description
 ## Notes on the original (raw) data
 PLEASE ignore the data in the directory, Inertial Signals in the test and train directories
 
-## Creating the tidy datafile
-### Guide to create the tidy data file
+### Creating the tidy datafile
+#### Guide to create the tidy data file
 1. Download the zip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 2. Unzip and extract zip file to the working directory.
 3. Read the activity_labels.txt in the directory, "UCI HAR Dataset" into a data frame with two variables(columns), first for the activity labels(1 to 6) and second for the activity names (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING,  LAYING).
@@ -39,76 +39,76 @@ PLEASE ignore the data in the directory, Inertial Signals in the test and train 
 13. Use dcast{reshape2} to get the average of each measurement grouped by Activity and Subject. This is the tidy data.
 14. Use write.table to wirte a file,TidyData.txt to the working directory.
 
-##### Description of the variables in the TidyData.txt file
+#### Description of the variables in the TidyData.txt file
 
 Dimensions of TidyData.txt: 180 observations(rows)
                             68 variables(columns)
                             
 There are 6 activities(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) and 30 subjects which results in 180 (6 * 30) observations for the mean and standard deviation measurements(variables 3-68). Variable 1 and 2 are Activity and Subject respectively.
 The variables for the mean and standard deviation measurements are as follows:
-tBodyAcc-mean()-X -           
-tBodyAcc-mean()-Y - 
-tBodyAcc-mean()-Z
-tGravityAcc-mean()-X
-tGravityAcc-mean()-Y
-tGravityAcc-mean()-Z
-tBodyAccJerk-mean()-X
-tBodyAccJerk-mean()-Y
-tBodyAccJerk-mean()-Z
-tBodyGyro-mean()-X
-tBodyGyro-mean()-Y
-tBodyGyro-mean()-Z
-tBodyGyroJerk-mean()-X
-tBodyGyroJerk-mean()-Y
-tBodyGyroJerk-mean()-Z
-tBodyAccMag-mean()
-tGravityAccMag-mean()
-tBodyAccJerkMag-mean()
-tBodyGyroMag-mean()
-tBodyGyroJerkMag-mean()
-fBodyAcc-mean()-X
-fBodyAcc-mean()-Y
-fBodyAcc-mean()-Z
-fBodyAccJerk-mean()-X
-fBodyAccJerk-mean()-Y
-fBodyAccJerk-mean()-Z
-fBodyGyro-mean()-X
-fBodyGyro-mean()-Y
-fBodyGyro-mean()-Z
-fBodyAccMag-mean()
-fBodyBodyAccJerkMag-mean()
-fBodyBodyGyroMag-mean()
-fBodyBodyGyroJerkMag-mean()
-tBodyAcc-std()-X
-tBodyAcc-std()-Y
-tBodyAcc-std()-Z
-tGravityAcc-std()-X
-tGravityAcc-std()-Y
-tGravityAcc-std()-Z
-tBodyAccJerk-std()-X
-tBodyAccJerk-std()-Y
-tBodyAccJerk-std()-Z
-tBodyGyro-std()-X
-tBodyGyro-std()-Y
-tBodyGyro-std()-Z
-tBodyGyroJerk-std()-X
-tBodyGyroJerk-std()-Y
-tBodyGyroJerk-std()-Z
-tBodyAccMag-std()
-tGravityAccMag-std()
-tBodyAccJerkMag-std()
-tBodyGyroMag-std()
-tBodyGyroJerkMag-std()
-fBodyAcc-std()-X
-fBodyAcc-std()-Y
-fBodyAcc-std()-Z
-fBodyAccJerk-std()-X
-fBodyAccJerk-std()-Y
-fBodyAccJerk-std()-Z
-fBodyGyro-std()-X
-fBodyGyro-std()-Y
-fBodyGyro-std()-Z
-fBodyAccMag-std()
-fBodyBodyAccJerkMag-std()
-fBodyBodyGyroMag-std()
-fBodyBodyGyroJerkMag-std()
+tBodyAcc-mean()-X - mean of body acceleration signal(time domain) in the X direction          
+tBodyAcc-mean()-Y - mean of body acceleration signal(time domain) in the Y direction
+tBodyAcc-mean()-Z - mean of body acceleration signal(time domain) in the Z direction
+tGravityAcc-mean()-X - mean of gravity acceleration signal(time domain) in the X direction
+tGravityAcc-mean()-Y - mean of gravity acceleration signal(time domain) in the Y direction
+tGravityAcc-mean()-Z - mean of gravity acceleration signal(time domain) in the Z direction
+tBodyAccJerk-mean()-X - mean of body linear acceleration jerk signal (time domain) in the X direction
+tBodyAccJerk-mean()-Y - mean of body linear acceleration jerk signal(time domain) in the Y direction
+tBodyAccJerk-mean()-Z - mean of body linear acceleration jerk signal(time domain) in the Z direction
+tBodyGyro-mean()-X - mean of body gyroscope signal(time domain) in the X direction
+tBodyGyro-mean()-Y - mean of body gyroscope signal(time domain) in the Y direction
+tBodyGyro-mean()-Z - mean of body gyroscope signal(time domain) in the Z direction
+tBodyGyroJerk-mean()-X - mean of body angular velocity(time domain) of jerk signal in the X direction
+tBodyGyroJerk-mean()-Y - mean of body angular velocity(time domain) of jerk signal in the Y direction
+tBodyGyroJerk-mean()-Z - mean of body angular velocity(time domain) of jerk signal in the Z direction
+tBodyAccMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration signal(time domain)
+tGravityAccMag-mean() - mean of the magnitude(Euclidean norm) of gravity acceleration signal(time domain)
+tBodyAccJerkMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration jerk signal(time domain)
+tBodyGyroMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope signal(time domain)
+tBodyGyroJerkMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope jerk signal(time domain)
+fBodyAcc-mean()-X - mean of body acceleration signal(frequency domain) in the X direction
+fBodyAcc-mean()-Y - mean of body acceleration signal(frequency domain) in the Y direction
+fBodyAcc-mean()-Z - mean of body acceleration signal(frequency domain) in the Z direction
+fBodyAccJerk-mean()-X - mean of body linear acceleration jerk signal (frequency domain) in the X direction
+fBodyAccJerk-mean()-Y - mean of body linear acceleration jerk signal (frequency domain) in the Y direction
+fBodyAccJerk-mean()-Z - mean of body linear acceleration jerk signal (frequency domain) in the Z direction
+fBodyGyro-mean()-X - mean of body gyroscope signal(frequency domain) in the X direction
+fBodyGyro-mean()-Y - mean of body gyroscope signal(frequency domain) in the Y direction
+fBodyGyro-mean()-Z - mean of body gyroscope signal(frequency domain) in the Z direction
+fBodyAccMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration signal(frequency domain) 
+fBodyBodyAccJerkMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration jerk signal(frequency domain) 
+fBodyBodyGyroMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope signal(frequency domain)
+fBodyBodyGyroJerkMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope jerk signal(frequency domain)
+tBodyAcc-std()-X - standard deviation of body acceleration signal(time domain) in the X direction          
+tBodyAcc-std()-Y - standard deviation of body acceleration signal(time domain) in the Y direction          
+tBodyAcc-std()-Z - standard deviation of body acceleration signal(time domain) in the Z direction          
+tGravityAcc-std()-X - standard deviation of gravity acceleration signal(time domain) in the X direction
+tGravityAcc-std()-Y - standard deviation of gravity acceleration signal(time domain) in the Y direction
+tGravityAcc-std()-Z - standard deviation of gravity acceleration signal(time domain) in the Z direction
+tBodyAccJerk-std()-X - standard deviation of body linear acceleration jerk signal (time domain) in the X direction 
+tBodyAccJerk-std()-Y - standard deviation of body linear acceleration jerk signal (time domain) in the Y direction 
+tBodyAccJerk-std()-Z - standard deviation of body linear acceleration jerk signal (time domain) in the Z direction 
+tBodyGyro-std()-X - standard deviation of body gyroscope signal(time domain) in the X direction 
+tBodyGyro-std()-Y - standard deviation of body gyroscope signal(time domain) in the Y direction 
+tBodyGyro-std()-Z - standard deviation of body gyroscope signal(time domain) in the Z direction 
+tBodyGyroJerk-std()-X - standard deviation of body angular velocity(time domain) of jerk signal in the X direction
+tBodyGyroJerk-std()-Y - standard deviation of body angular velocity(time domain) of jerk signal in the Y direction
+tBodyGyroJerk-std()-Z - standard deviation of body angular velocity(time domain) of jerk signal in the Z direction
+tBodyAccMag-std() - standard deviation of the magnitude(Euclidean norm) of body acceleration signal(time domain)
+tGravityAccMag-std() - standard deviation of the magnitude(Euclidean norm) of gravity acceleration signal(time domain)
+tBodyAccJerkMag-std() - standard deviation of the magnitude(Euclidean norm) of body acceleration jerk signal(time domain)
+tBodyGyroMag-std() - standard deviation of the magnitude(Euclidean norm) of body gyroscope signal(time domain)
+tBodyGyroJerkMag-std() - standard deviation of the magnitude(Euclidean norm) of body gyroscope jerk signal(time domain)
+fBodyAcc-std()-X - standard deviation of the magnitude(Euclidean norm) of body acceleration signal(frequency domain) in the X direction
+fBodyAcc-std()-Y - standard deviation of the magnitude(Euclidean norm) of body acceleration signal(frequency domain) in the Y direction
+fBodyAcc-std()-Z - standard deviation of the magnitude(Euclidean norm) of body acceleration signal(frequency domain) in the Z direction
+fBodyAccJerk-std()-X - standard deviation of body linear acceleration jerk signal (frequency domain) in the X direction
+fBodyAccJerk-std()-Y - standard deviation of body linear acceleration jerk signal (frequency domain) in the Y direction
+fBodyAccJerk-std()-Z - standard deviation of body linear acceleration jerk signal (frequency domain) in the Z direction
+fBodyGyro-std()-X - standard deviation of body gyroscope signal(frequency domain) in the X direction
+fBodyGyro-std()-Y - standard deviation of body gyroscope signal(frequency domain) in the Y direction
+fBodyGyro-std()-Z - standard deviation of body gyroscope signal(frequency domain) in the Z direction
+fBodyAccMag-std() - standard deviation of the magnitude(Euclidean norm) of body acceleration signal(frequency domain) 
+fBodyBodyAccJerkMag-std() - standard deviation of the magnitude(Euclidean norm) of body acceleration jerk signal(frequency domain) 
+fBodyBodyGyroMag-std() - standard deviation of the magnitude(Euclidean norm) of body gyroscope signal(frequency domain)
+fBodyBodyGyroJerkMag-std() - mean of the magnitude(Euclidean norm) of body gyroscope jerk signal(frequency domain)
