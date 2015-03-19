@@ -47,38 +47,38 @@ Dimensions of TidyData.txt: 180 observations(rows)
 There are 6 activities(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) and 30 subjects which results in 180 (6 * 30) observations for the mean and standard deviation measurements(variables 3-68). Variable 1 and 2 are Activity and Subject respectively.
 
 #####The variables for the mean and standard deviation measurements are as follows:
-tBodyAcc-mean()-X - mean of body acceleration signal(time domain) in the X direction.
-tBodyAcc-mean()-Y - mean of body acceleration signal(time domain) in the Y direction.
-tBodyAcc-mean()-Z - mean of body acceleration signal(time domain) in the Z direction.
-tGravityAcc-mean()-X - mean of gravity acceleration signal(time domain) in the X direction.
-tGravityAcc-mean()-Y - mean of gravity acceleration signal(time domain) in the Y direction.
-tGravityAcc-mean()-Z - mean of gravity acceleration signal(time domain) in the Z direction.
-tBodyAccJerk-mean()-X - mean of body linear acceleration jerk signal (time domain) in the X direction.
-tBodyAccJerk-mean()-Y - mean of body linear acceleration jerk signal(time domain) in the Y direction.
-tBodyAccJerk-mean()-Z - mean of body linear acceleration jerk signal(time domain) in the Z direction.
-tBodyGyro-mean()-X - mean of body gyroscope signal(time domain) in the X direction.
-tBodyGyro-mean()-Y - mean of body gyroscope signal(time domain) in the Y direction.
-tBodyGyro-mean()-Z - mean of body gyroscope signal(time domain) in the Z direction
-tBodyGyroJerk-mean()-X - mean of body angular velocity(time domain) of jerk signal in the X direction
-tBodyGyroJerk-mean()-Y - mean of body angular velocity(time domain) of jerk signal in the Y direction
-tBodyGyroJerk-mean()-Z - mean of body angular velocity(time domain) of jerk signal in the Z direction
-tBodyAccMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration signal(time domain)
-tGravityAccMag-mean() - mean of the magnitude(Euclidean norm) of gravity acceleration signal(time domain)
-tBodyAccJerkMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration jerk signal(time domain)
-tBodyGyroMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope signal(time domain)
-tBodyGyroJerkMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope jerk signal(time domain)
-fBodyAcc-mean()-X - mean of body acceleration signal(frequency domain) in the X direction
-fBodyAcc-mean()-Y - mean of body acceleration signal(frequency domain) in the Y direction
-fBodyAcc-mean()-Z - mean of body acceleration signal(frequency domain) in the Z direction
-fBodyAccJerk-mean()-X - mean of body linear acceleration jerk signal (frequency domain) in the X direction
-fBodyAccJerk-mean()-Y - mean of body linear acceleration jerk signal (frequency domain) in the Y direction
-fBodyAccJerk-mean()-Z - mean of body linear acceleration jerk signal (frequency domain) in the Z direction
-fBodyGyro-mean()-X - mean of body gyroscope signal(frequency domain) in the X direction
-fBodyGyro-mean()-Y - mean of body gyroscope signal(frequency domain) in the Y direction
-fBodyGyro-mean()-Z - mean of body gyroscope signal(frequency domain) in the Z direction
-fBodyAccMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration signal(frequency domain) 
-fBodyBodyAccJerkMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration jerk signal(frequency domain) 
-fBodyBodyGyroMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope signal(frequency domain)
+1. tBodyAcc-mean()-X - mean of body acceleration signal(time domain) in the X direction.
+2. tBodyAcc-mean()-Y - mean of body acceleration signal(time domain) in the Y direction.
+3. tBodyAcc-mean()-Z - mean of body acceleration signal(time domain) in the Z direction.
+4. tGravityAcc-mean()-X - mean of gravity acceleration signal(time domain) in the X direction.
+5. tGravityAcc-mean()-Y - mean of gravity acceleration signal(time domain) in the Y direction.
+6. tGravityAcc-mean()-Z - mean of gravity acceleration signal(time domain) in the Z direction.
+7. tBodyAccJerk-mean()-X - mean of body linear acceleration jerk signal (time domain) in the X direction.
+8. tBodyAccJerk-mean()-Y - mean of body linear acceleration jerk signal(time domain) in the Y direction.
+9. tBodyAccJerk-mean()-Z - mean of body linear acceleration jerk signal(time domain) in the Z direction.
+10. tBodyGyro-mean()-X - mean of body gyroscope signal(time domain) in the X direction.
+11. tBodyGyro-mean()-Y - mean of body gyroscope signal(time domain) in the Y direction.
+12. tBodyGyro-mean()-Z - mean of body gyroscope signal(time domain) in the Z direction.
+13. tBodyGyroJerk-mean()-X - mean of body angular velocity(time domain) of jerk signal in the X direction.
+14. tBodyGyroJerk-mean()-Y - mean of body angular velocity(time domain) of jerk signal in the Y direction.
+15. tBodyGyroJerk-mean()-Z - mean of body angular velocity(time domain) of jerk signal in the Z direction.
+16. tBodyAccMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration signal(time domain).
+17. tGravityAccMag-mean() - mean of the magnitude(Euclidean norm) of gravity acceleration signal(time domain).
+18. tBodyAccJerkMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration jerk signal(time domain).
+19. tBodyGyroMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope signal(time domain).
+20. tBodyGyroJerkMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope jerk signal(time domain).
+21. fBodyAcc-mean()-X - mean of body acceleration signal(frequency domain) in the X direction.
+22. fBodyAcc-mean()-Y - mean of body acceleration signal(frequency domain) in the Y direction.
+23. fBodyAcc-mean()-Z - mean of body acceleration signal(frequency domain) in the Z direction.
+24. fBodyAccJerk-mean()-X - mean of body linear acceleration jerk signal (frequency domain) in the X direction.
+25. fBodyAccJerk-mean()-Y - mean of body linear acceleration jerk signal (frequency domain) in the Y direction.
+26. fBodyAccJerk-mean()-Z - mean of body linear acceleration jerk signal (frequency domain) in the Z direction.
+27. fBodyGyro-mean()-X - mean of body gyroscope signal(frequency domain) in the X direction.
+28. fBodyGyro-mean()-Y - mean of body gyroscope signal(frequency domain) in the Y direction.
+29. fBodyGyro-mean()-Z - mean of body gyroscope signal(frequency domain) in the Z direction.
+30. fBodyAccMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration signal(frequency domain).
+31. fBodyBodyAccJerkMag-mean() - mean of the magnitude(Euclidean norm) of body acceleration jerk signal(frequency domain).
+32. fBodyBodyGyroMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope signal(frequency domain).
 fBodyBodyGyroJerkMag-mean() - mean of the magnitude(Euclidean norm) of body gyroscope jerk signal(frequency domain)
 tBodyAcc-std()-X - standard deviation of body acceleration signal(time domain) in the X direction          
 tBodyAcc-std()-Y - standard deviation of body acceleration signal(time domain) in the Y direction          
