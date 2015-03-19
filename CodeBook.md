@@ -39,7 +39,8 @@ PLEASE ignore the data in the directory, Inertial Signals in the test and train 
 13. Use dcast{reshape2} to get the average of each measurement grouped by Activity and Subject. This is the tidy data.
 14. Use write.table to wirte a file,TidyData.txt to the working directory.
 
-### Description of the variables in the TidyData.txt file
+##### Description of the variables in the TidyData.txt file
+
 Dimensions of TidyData.txt: 180 observations(rows)
                             68 variables(columns)
                             
