@@ -19,4 +19,19 @@ The following files are available for the train and test data. Their description
 * 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample for training data. Its range is from 1 to 30. 
 * 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample for test data. Its range is from 1 to 30. 
 
+## Notes on the original (raw) data
+PLEASE ignore the data in the directory, Inertial Signals in the test and train directories
 
+## Creating the tidy datafile
+### Guide to create the tidy data file
+1. Download the zip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+2. Unzip and extract zip file to the working directory.
+3. Read the activity_labels.txt in the directory, "UCI HAR Dataset" into a data frame with two variables(columns), first for the activity labels(1 to 6) and second for the activity names (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING,  LAYING).
+4. Read the test and training activity labels data sets into data frames.(test/y_test.txt and train/y_train.txt). Each observation in the test and training data sets is associated with an activity label.
+5. Map each activity label in the test and training activity labels data sets(step 4) to activity name from step 3 using join{plyr}.
+6. Read the test and training subject data sets into data frames.(test/subject_test.txt and train/subject_train.txt). Each observation in the test and training data sets is associated with a subject.
+7. Read the features(variable names) for the test and training data sets into a data frame.
+8. Assign results of step 7(second column containing variable names) to be column names to the result of step 6.
+9. Merge the columns Activity(step5), Subject(Step6) to the data frame from step (6-8).
+10. Merge the test and training data frames to create a merged dat frame.
+11. 
