@@ -34,4 +34,9 @@ PLEASE ignore the data in the directory, Inertial Signals in the test and train 
 8. Assign results of step 7(second column containing variable names) to be column names to the result of step 6.
 9. Merge the columns Activity(step5), Subject(Step6) to the data frame from step (6-8).
 10. Merge the test and training data frames to create a merged dat frame.
-11. 
+11. Get the variables(column names) that match mean and standard deviation measurements from step 10 and create the final data frame with Activity, Subject and mean and standard deviation measurements.
+12. Use the melt{reshape2} function to create a data frame for each measurement grouped by Activity and Subject.
+13. Use dcast{reshape2} to get the mean of each measurement grouped by Activity and Subject. This is the tidy data.
+14. Use write.table to wirte a file,TidyData_Russel_DSouza.txt to the working directory.
+
+### Description of the variables in the tiny_data.txt file
