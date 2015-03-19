@@ -1,5 +1,5 @@
-# Project Description
-## Human Activity Recognition Using Smartphones Dataset
+# README file
+# Human Activity Recognition Using Smartphones Dataset
 
 1. Download the zip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 2. Unzip and extract zip file to the working directory.
