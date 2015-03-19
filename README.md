@@ -1,3 +1,3 @@
-# datasciencecoursera1
-Data Scientist Toolbox Course Project
-Test
+# Project Description
+## Human Activity Recognition Using Smartphones Dataset
+
