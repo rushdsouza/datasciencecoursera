@@ -45,7 +45,8 @@ Dimensions of TidyData.txt: 180 observations(rows)
                             68 variables(columns)
                             
 There are 6 activities(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) and 30 subjects which results in 180 (6 * 30) observations for the mean and standard deviation measurements(variables 3-68). Variable 1 and 2 are Activity and Subject respectively.
-The variables for the mean and standard deviation measurements are as follows:
+
+#####The variables for the mean and standard deviation measurements are as follows:
 1. tBodyAcc-mean()-X - mean of body acceleration signal(time domain) in the X direction
 2. tBodyAcc-mean()-Y - mean of body acceleration signal(time domain) in the Y direction
 3. tBodyAcc-mean()-Z - mean of body acceleration signal(time domain) in the Z direction
